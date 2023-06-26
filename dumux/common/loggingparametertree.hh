@@ -168,6 +168,7 @@ public:
                              const std::string& key,
                              const std::string& defaultValue) const
     {
+
         if (groupPrefix == "")
             return get(key, defaultValue);
 
@@ -277,11 +278,13 @@ public:
                    const std::string& key,
                    const T& defaultValue) const
     {
+
         if (groupPrefix == "")
             return get<T>(key, defaultValue);
 
         // first, look for the compound key
         std::string compoundKey = groupPrefix + "." + key;
+
         if (params_.hasKey(compoundKey))
         {
             // log that we used this parameter

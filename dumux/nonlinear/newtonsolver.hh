@@ -770,6 +770,9 @@ private:
                 assembleTimer.start();
                 assembleLinearSystem(uCurrentIter);
                 assembleTimer.stop();
+                // DUNE_THROW(NumericalProblem,
+                // "stop after assemble");
+                //myErrorStop
 
                 ///////////////
                 // linear solve

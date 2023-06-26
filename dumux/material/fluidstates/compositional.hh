@@ -433,7 +433,7 @@ public:
     void setWettingPhase(int phaseIdx)
     { wPhaseIdx_ = phaseIdx; }
 
-protected:
+//protected:
     //! zero-initialize all data members with braces syntax
     std::array<std::array<Scalar, numComponents>, numPhases> moleFraction_ = {};
     std::array<std::array<Scalar, numComponents>, numPhases> fugacityCoefficient_ = {};

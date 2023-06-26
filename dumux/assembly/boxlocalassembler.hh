@@ -358,6 +358,10 @@ public:
                 // TODO additional dof dependencies
             }
         }
+// std::cout <<std::endl;
+// DUNE_THROW(Dune::InvalidStateException,
+// "ElementResidualVector assembleJacobianAndResidualImpl");
+//myErrorStop
         return origResiduals;
     }
 
